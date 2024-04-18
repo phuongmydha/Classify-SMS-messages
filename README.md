@@ -4,6 +4,12 @@ Using Machine Learning model: SVM, MaxEnt; and deep learning LSTM  model to clas
 
 
 Through the process of research and study, the team has developed a classification model for categorizing SMS messages into two types: ham and spam (useful and non-useful) using three models: SVM, LSTM, and Regularized Logistic Regression, utilizing libraries. The results show that both models achieved relatively high accuracy. Additionally, the team applied the knowledge learned about Natural Language Processing to perform Text Mining (data extraction and processing of text data).
+## SVM
+## MaxEnt
+## LSTM
+
+
+
 
 ## Limitations and Directions for Development
 ### Limitations
