@@ -117,16 +117,28 @@ From the graph, with the number of epochs = 6, the highest accuracy for the mode
 
 ## Models Evaluation
 
-![cm_lstm](https://github.com/phuongmydha/NLP/assets/166359916/ec6c3b9f-7f9f-4ddb-a3ec-e7685dc0f8ee)
-![cm_maxent](https://github.com/phuongmydha/NLP/assets/166359916/ed765769-6d60-41e0-b4ee-4050c9de18f1)
+Based on the confusion matrix, we observe that the SVM model correctly predicts 894 instances as ham and 106 instances as spam. The False Positive rate is 29, indicating cases where the model predicts ham but the actual label is spam. This could inconvenience the message recipients as some spam messages are delivered to their inbox. The False Negative rate is 5, representing cases where the model predicts spam but the actual label is ham. This may cause users to miss important messages as they are incorrectly classified as spam.
+
+The Precision, Recall, and F1 scores below also demonstrate that the SVM model's prediction accuracy is very high with this dataset.
 ![cm_svm](https://github.com/phuongmydha/NLP/assets/166359916/15c72963-f2b1-43c1-96c2-2f6c0a724dce)
+
+Indicating that the model predicts 897 instances of 0 (ham) and 111 instances of 1 (spam) correctly. The rates of False Positives and False Negatives are quite low. The Precision, Recall, and F1 scores below also demonstrate that the LSTM model's prediction accuracy is very high with this dataset.
+![cm_lstm](https://github.com/phuongmydha/NLP/assets/166359916/ec6c3b9f-7f9f-4ddb-a3ec-e7685dc0f8ee)
+
+Based on the confusion matrix, we can see that the Regularized Logistic Regression model correctly predicts 896 instances as ham and 109 instances as spam. The False Positive rate is 26, indicating cases where the model predicts ham but the actual label is spam. This could inconvenience the message recipients as some spam messages have infiltrated their inbox. The False Negative rate is 3, representing cases where the model predicts spam but the actual label is ham. This may cause users to miss important messages as they are incorrectly classified as spam.
+
+The Precision, Recall, and F1 scores below also demonstrate that the Logistic Regression model's prediction accuracy is quite high with this dataset.
+![cm_maxent](https://github.com/phuongmydha/NLP/assets/166359916/ed765769-6d60-41e0-b4ee-4050c9de18f1)
+
 
 
 ## Summary of Model Evaluation Metrics
 
 ![result](https://github.com/phuongmydha/NLP/assets/166359916/3957114d-ad19-45a7-9c3f-117cd1157d67)
 
+Through this result table, we observe that all three models achieve quite high performance and effectiveness in message classification. Among them, the model with the highest result is the LSTM deep learning model. However, this model has the disadvantage of taking significantly longer to run compared to SVM or Regularized Logistic Regression.
 
+Most messaging systems must deal with processing a large volume of messages and require fast processing speeds. Therefore, it may be advisable to consider choosing the Regularized Logistic Regression model and accepting a slightly lower accuracy compared to LSTM, but with much faster runtime.
 
 ## Limitations and Directions for Development
 ### Limitations
