@@ -6,20 +6,70 @@ Using Machine Learning model: SVM, MaxEnt; and deep learning LSTM  model to clas
 Through the process of research and study, the team has developed a classification model for categorizing SMS messages into two types: ham and spam (useful and non-useful) using three models: SVM, LSTM, and Regularized Logistic Regression, utilizing libraries. The results show that both models achieved relatively high accuracy. Additionally, the team applied the knowledge learned about Natural Language Processing to perform Text Mining (data extraction and processing of text data).
 ## SVM 
 Build a linear SVM classification model for the SMS Spam Collection dataset, with the parameter kernel='linear'. The runtime of the model is measured from the training process to the completion of prediction for the test set.
-## MaxEnt - Using Logistic Regression
-
+## MaxEnt - Using Regularized Logistic Regression
+This section focuses on deriving appropriate parameters for the Regularized Logistic Regression model, specifically L1 and L2 regularization, and utilizes cross-validation to determine the optimal penalty parameter λ for both methods.
 
 ### Choosing C parameter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <p>Finding the Best C Parameter for L1 Regularization:</p>
+  <ol>
+    <li>Create a list of C values to evaluate.</li>
+    <li>Iterate over each C value and create a Logistic Regression model with L1 penalty.</li>
+    <li>Perform cross-validation on 5 folds of the training data.</li>
+    <li>Select the C value with the highest mean score.</li>
+  </ol>
+
+  <p>Finding the Best C Parameter for L2 Regularization:</p>
+  <ol>
+    <li>Similar to L1 regularization, but with the penalty parameter set to 'l2'.</li>
+    <li>Iterate over each C value and create a Logistic Regression model with L2 penalty.</li>
+    <li>Perform cross-validation on 5 folds of the training data.</li>
+    <li>Select the C value with the highest mean score.</li>
+  </ol>
+</body>
+</html>
+
+
+
+
+
 <div align="center">  
  <img width="428" alt="l1 performance" src="https://github.com/phuongmydha/NLP/assets/166359916/e83e253b-155b-4224-bce8-936e917fb00f">
  <img width="428" alt="l2 performance" src="https://github.com/phuongmydha/NLP/assets/166359916/31a8cbb0-b4a3-4660-9e6f-46e775c9dd40">
 </div>
     
 ### Choosing models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <p>Choosing the Method for Regularized Logistic Regression Model:</p>
+  <ol>
+   <li>Compare the metrics between L1 and L2 regularization models.</li>
+   <li>Select the method with better metrics for further processing.</li>
+
+  <h2>Building the Regularized Logistic Regression Model:</h2>
+  <ol>
+    <li>Build the Logistic Regression model using the selected method and the best C value.</li>
+    <li>Train the model on the training data and predict on the test data.</li>
+    <li>Measure the runtime from training to prediction completion.</li>
+  </ol>
+</body>
+</html>
+
 <div align="center">  
   <img width="428" alt="l1l2" src="https://github.com/phuongmydha/NLP/assets/166359916/9eb3ff91-1cfa-4a01-9ab3-df236320c499">
 </div>
-
+The model using the L2 method has indices equal to or greater than L1. Therefore, the appropriate model is Regularized Logistic Regression using L2 regularization.
 
 ## LSTM
 
