@@ -54,8 +54,14 @@ Build a linear SVM classification model for the SMS Spam Collection dataset, wit
 
 ## Models Evaluation
 
+![cm_lstm](https://github.com/phuongmydha/NLP/assets/166359916/ec6c3b9f-7f9f-4ddb-a3ec-e7685dc0f8ee)
+![cm_maxent](https://github.com/phuongmydha/NLP/assets/166359916/ed765769-6d60-41e0-b4ee-4050c9de18f1)
+![cm_svm](https://github.com/phuongmydha/NLP/assets/166359916/15c72963-f2b1-43c1-96c2-2f6c0a724dce)
+
+
 ## Summary of Model Evaluation Metrics
 
+![result](https://github.com/phuongmydha/NLP/assets/166359916/3957114d-ad19-45a7-9c3f-117cd1157d67)
 
 
 
