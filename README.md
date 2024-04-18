@@ -4,9 +4,50 @@ Using Machine Learning model: SVM, MaxEnt; and deep learning LSTM  model to clas
 
 
 Through the process of research and study, the team has developed a classification model for categorizing SMS messages into two types: ham and spam (useful and non-useful) using three models: SVM, LSTM, and Regularized Logistic Regression, utilizing libraries. The results show that both models achieved relatively high accuracy. Additionally, the team applied the knowledge learned about Natural Language Processing to perform Text Mining (data extraction and processing of text data).
-## SVM
+## SVM 
+
 ## MaxEnt
+### Logistic Regression
+
+### Choosing C parameter
+### Choosing models
+
 ## LSTM
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <p>To build an LSTM model, the following steps are undertaken:</p>
+  <ol>
+    <li>Vectorize the data using the Count Vector method. Since the output data will be a sparse matrix, it needs to be converted into a dense array before feeding it into the LSTM model.</li>
+    <li>Convert the sparse matrix into a dense array.</li>
+    <li>Reshape the data to fit the input requirements of the LSTM model, which necessitates three dimensions: samples, time steps, and features.</li>
+    <li>Build the LSTM model using the Keras framework:
+      <ul>
+        <li>Create a Sequential model.</li>
+        <li>Add an LSTM layer with 50 units and define its input shape.</li>
+        <li>Add a dropout layer with a rate of 0.5 to mitigate overfitting.</li>
+        <li>Add a Dense layer with a sigmoid activation function for binary classification.</li>
+      </ul>
+    </li>
+    <li>Compile the model using the Adam optimizer and binary crossentropy loss function.</li>
+    <li>Train the model with 10 epochs and a batch size of 32, while also specifying validation data.</li>
+  </ol>
+  <p>The choice of epochs and batch size balances between model learning capacity and computational efficiency. Too few epochs or a small batch size might lead to underfitting, while too many epochs or a large batch size might lead to overfitting or increased training time. The Adam optimizer is chosen for its popularity and efficiency, and binary crossentropy loss is used for binary classification tasks.</p>
+</body>
+</html>
+
+
+
+
+
+## Models Evaluation
+
+## Summary of Model Evaluation Metrics
 
 
 
