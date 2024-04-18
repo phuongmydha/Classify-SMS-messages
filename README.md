@@ -1,15 +1,20 @@
-# NLP
+# Natural Language Processing
 Text Processing: strip special characters, removing stopwords, Tokenization and Lemmatization
 Using Machine Learning model: SVM, MaxEnt; and deep learning LSTM  model to classify sms message is ‘ham’ or ‘spam’
 
 
 Through the process of research and study, the team has developed a classification model for categorizing SMS messages into two types: ham and spam (useful and non-useful) using three models: SVM, LSTM, and Regularized Logistic Regression, utilizing libraries. The results show that both models achieved relatively high accuracy. Additionally, the team applied the knowledge learned about Natural Language Processing to perform Text Mining (data extraction and processing of text data).
 ## SVM 
-
-## MaxEnt
-### Logistic Regression
+Build a linear SVM classification model for the SMS Spam Collection dataset, with the parameter kernel='linear'. The runtime of the model is measured from the training process to the completion of prediction for the test set.
+## MaxEnt - Using Logistic Regression
+<div align="center">  
+  <img width="861" alt="Picture1" src="https://github.com/phuongmydha/NLP/assets/166359916/d54e751d-50e8-4e0f-a4b4-d4960fc33e2d">
+</div>
 
 ### Choosing C parameter
+ 
+    
+
 ### Choosing models
 
 ## LSTM
@@ -40,8 +45,6 @@ Through the process of research and study, the team has developed a classificati
   <p>The choice of epochs and batch size balances between model learning capacity and computational efficiency. Too few epochs or a small batch size might lead to underfitting, while too many epochs or a large batch size might lead to overfitting or increased training time. The Adam optimizer is chosen for its popularity and efficiency, and binary crossentropy loss is used for binary classification tasks.</p>
 </body>
 </html>
-
-
 
 
 
