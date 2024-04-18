@@ -3,7 +3,8 @@ Text Processing: strip special characters, removing stopwords, Tokenization and 
 Using Machine Learning model: SVM, MaxEnt; and deep learning LSTM  model to classify sms message is ‘ham’ or ‘spam’
 
 
-Through the process of research and study, the team has developed a classification model for categorizing SMS messages into two types: ham and spam (useful and non-useful) using three models: SVM, LSTM, and Regularized Logistic Regression, utilizing libraries. The results show that both models achieved relatively high accuracy. Additionally, the team applied the knowledge learned about Natural Language Processing to perform Text Mining (data extraction and processing of text data).
+Through the process of research and study, we
+ has developed a classification model for categorizing SMS messages into two types: ham and spam (useful and non-useful) using three models: SVM, LSTM, and Regularized Logistic Regression, utilizing libraries. The results show that both models achieved relatively high accuracy. Additionally, appl the knowledge learned about Natural Language Processing to perform Text Mining (data extraction and processing of text data).
 ## SVM 
 Build a linear SVM classification model for the SMS Spam Collection dataset, with the parameter kernel='linear'. The runtime of the model is measured from the training process to the completion of prediction for the test set.
 ## MaxEnt - Using Regularized Logistic Regression
@@ -101,7 +102,7 @@ The model using the L2 method has indices equal to or greater than L1. Therefore
 </body>
 </html>
 
-After training the algorithm, the team obtained results presented through Learning curves and confusion matrices as shown below:
+After training the algorithm, we obtained results presented through Learning curves and confusion matrices as shown below:
 
 <div align = "center">
  <img width="602" alt="accuracy" src="https://github.com/phuongmydha/NLP/assets/166359916/f7f004da-5356-4c14-8cbe-c2176d2a3fa6">
@@ -142,7 +143,7 @@ Most messaging systems must deal with processing a large volume of messages and 
 
 ## Limitations and Directions for Development
 ### Limitations
-The rate of misclassifying spam as ham is not yet optimized. In the classification of messages into ham and spam groups, accuracy is not fully achieved, leading to inconvenience when messages labeled as 'ham' are actually 'spam', or useful messages are mislabeled as 'spam', resulting in loss of important information for users. Due to limited research time, the input dataset used by the team is the Kaggle dataset, which has not been able to exploit and collect real-time input data from SMS messages from network providers.
+The rate of misclassifying spam as ham is not yet optimized. In the classification of messages into ham and spam groups, accuracy is not fully achieved, leading to inconvenience when messages labeled as 'ham' are actually 'spam', or useful messages are mislabeled as 'spam', resulting in loss of important information for users. Due to limited research time, the input dataset used by Kaggle dataset, which has not been able to exploit and collect real-time input data from SMS messages from network providers.
 ### Development Directions
 Mispredictions may also be due to unbalanced data in terms of spam and ham. To address this, development steps are needed in the data collection phase:
 Building a large and diverse dataset with examples of both ham and spam messages. This helps the model learn common characteristics of both types of messages. Alternatively, using balancing methods such as Under-sampling, Over-sampling, or a combination of both to avoid imbalance in the data.
