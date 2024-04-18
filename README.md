@@ -50,6 +50,18 @@ Build a linear SVM classification model for the SMS Spam Collection dataset, wit
 </body>
 </html>
 
+After training the algorithm, the team obtained results presented through Learning curves and confusion matrices as shown below:
+
+<div align = "center">
+ <img width="602" alt="accuracy" src="https://github.com/phuongmydha/NLP/assets/166359916/f7f004da-5356-4c14-8cbe-c2176d2a3fa6">
+</div> 
+
+We observe that as the number of epochs (the number of times the model is trained) increases, the loss (loss index) decreases. With a relatively small loss value, in the range from [0, 0.2], this is a positive sign indicating that the LSTM model is quite effective and performs well on both the training and validation sets.
+Additionally, we see that as the number of epochs increases, the Accuracy on both the training and validation sets also increases. With a high Accuracy index on the validation set, in the range from [0.96, 0.98], we can consider this model capable of making highly accurate predictions on new data.
+From the graph, with the number of epochs = 6, the highest accuracy for the model will be achieved, with an accuracy at epoch = 6 of 0.975 on the validation set.
+
+
+
 
 
 ## Models Evaluation
