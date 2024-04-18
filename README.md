@@ -56,8 +56,9 @@ This section focuses on deriving appropriate parameters for the Regularized Logi
   <ol>
    <li>Compare the metrics between L1 and L2 regularization models.</li>
    <li>Select the method with better metrics for further processing.</li>
-
-  <h2>Building the Regularized Logistic Regression Model:</h2>
+  </ol>
+  
+  <p>Building the Regularized Logistic Regression Model:</p>
   <ol>
     <li>Build the Logistic Regression model using the selected method and the best C value.</li>
     <li>Train the model on the training data and predict on the test data.</li>
