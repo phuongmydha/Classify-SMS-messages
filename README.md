@@ -7,15 +7,19 @@ Through the process of research and study, the team has developed a classificati
 ## SVM 
 Build a linear SVM classification model for the SMS Spam Collection dataset, with the parameter kernel='linear'. The runtime of the model is measured from the training process to the completion of prediction for the test set.
 ## MaxEnt - Using Logistic Regression
-<div align="center">  
-  <img width="861" alt="Picture1" src="https://github.com/phuongmydha/NLP/assets/166359916/d54e751d-50e8-4e0f-a4b4-d4960fc33e2d">
-</div>
+
 
 ### Choosing C parameter
- 
+<div align="center">  
+ <img width="428" alt="l1 performance" src="https://github.com/phuongmydha/NLP/assets/166359916/e83e253b-155b-4224-bce8-936e917fb00f">
+ <img width="428" alt="l2 performance" src="https://github.com/phuongmydha/NLP/assets/166359916/31a8cbb0-b4a3-4660-9e6f-46e775c9dd40">
+</div>
     
-
 ### Choosing models
+<div align="center">  
+  <img width="428" alt="l1l2" src="https://github.com/phuongmydha/NLP/assets/166359916/9eb3ff91-1cfa-4a01-9ab3-df236320c499">
+</div>
+
 
 ## LSTM
 
